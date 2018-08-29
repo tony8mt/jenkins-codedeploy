@@ -219,6 +219,8 @@
               "wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo\n",
               "rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key\n",
               "yum install -y jenkins\n",
+	      "yum remove -y java\n",
+	      "yum install -y yum install java-1.8.0-openjdk\n",
 
               "service jenkins start\n",
               "chkconfig jenkins on\n",
